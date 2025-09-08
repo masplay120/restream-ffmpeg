@@ -3,7 +3,7 @@ set -e
 
 # Variables de entorno (se pueden setear en Render)
 INPUT_URL=${INPUT_URL:-"https://live20.bozztv.com/giatvplayout7/giatv-208566/playlist.m3u8"}
-OUTPUT_URL=${OUTPUT_URL:-"rtmp://estacionmixtv:159357456@36bay2.tulix.tv/giatv-estacionmixtv/estacionmixtv"}
+OUTPUT_URL=${OUTPUT_URL:-"rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"}
 VIDEO_SIZE=${VIDEO_SIZE:-1280x720}
 VIDEO_BITRATE=${VIDEO_BITRATE:-3000k}
 AUDIO_BITRATE=${AUDIO_BITRATE:-64k}
