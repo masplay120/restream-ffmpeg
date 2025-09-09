@@ -4,7 +4,7 @@ set -e
 INPUT_URL=${INPUT_URL:-"https://live20.bozztv.com/giatvplayout7/giatv-208566/tracks-v1a1/mono.ts.m3u8"}
 OUTPUT_URL=${OUTPUT_URL:-"rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"}
 VIDEO_SIZE=${VIDEO_SIZE:-1280x720}
-VIDEO_BITRATE=${VIDEO_BITRATE:-3000k}
+VIDEO_BITRATE=${VIDEO_BITRATE:-2000k}
 AUDIO_BITRATE=${AUDIO_BITRATE:-64k}
 
 echo "▶️ Restream iniciando..."
