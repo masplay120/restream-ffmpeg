@@ -1,9 +1,8 @@
 FROM jrottenberg/ffmpeg:4.4-ubuntu
 
-# Copiar script
+# Copiamos el script
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-# Sobrescribir el entrypoint de la imagen
-ENTRYPOINT []
+# Ejecutamos con bash, no con ffmpeg
 CMD ["/bin/bash", "/start.sh"]
