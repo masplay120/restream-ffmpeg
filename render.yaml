@@ -8,7 +8,7 @@ services:
       - key: INPUT_URL
         value: "https://live20.bozztv.com/giatvplayout7/giatv-208566/playlist.m3u8"
       - key: OUTPUT_URL
-        value: "rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"
+        value: "rtmp://estacionmixtv:159357456@36bay2.tulix.tv/giatv-estacionmixtv/estacionmixtv"
       - key: VIDEO_SIZE
         value: "1280x720"
       - key: VIDEO_BITRATE
