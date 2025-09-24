@@ -2,7 +2,7 @@
 set -e
 
 INPUT_URL=${INPUT_URL:-"https://live20.bozztv.com/giatvplayout7/giatv-208566/tracks-v1a1/mono.ts.m3u8"}
-OUTPUT_URL=${OUTPUT_URL:-"rtmp://estacionmixtv:159357456@36bay2.tulix.tv/giatv-estacionmixtv/estacionmixtv"}
+OUTPUT_URL=${OUTPUT_URL:-"rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"}
 VIDEO_SIZE=${VIDEO_SIZE:-1280x720}
 VIDEO_BITRATE=${VIDEO_BITRATE:-2000k}
 AUDIO_BITRATE=${AUDIO_BITRATE:-64k}
@@ -15,7 +15,7 @@ echo "   Video bitrate: $VIDEO_BITRATE"
 echo "   Audio bitrate: $AUDIO_BITRATE"
 
 exec ffmpeg -re -i "$INPUT_URL" \
--c:v libx264 -preset veryfast -b:v 2000k -maxrate 2500k -bufsize 4M -s 1280x720 -r 30 -pix_fmt yuv420p \
+-c:v libx264 -preset veryfast -b:v 1500k -maxrate 2000k -bufsize 4M -s 1280x720 -r 30 -pix_fmt yuv420p \
 -c:a aac -b:a 64k -ar 48000 -ac 2 \
 -f flv -flvflags no_duration_filesize "$OUTPUT_URL" \
 -hide_banner -loglevel warning \
