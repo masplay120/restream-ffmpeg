@@ -12,6 +12,6 @@ services:
       - key: VIDEO_SIZE
         value: "1280x720"
       - key: VIDEO_BITRATE
-        value: "1500k"
+        value: "1000k"
       - key: AUDIO_BITRATE
         value: "64k"
