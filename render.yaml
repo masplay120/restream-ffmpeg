@@ -8,7 +8,7 @@ services:
       - key: INPUT_URL
         value: "https://live20.bozztv.com/giatvplayout7/giatv-208566/playlist.m3u8"
       - key: OUTPUT_URL
-        value: "rtmp://ssh101.bozztv.com:1935/ssh101 :1935/ssh101/estacionmixtv"
+        value: "rtmp://ssh101.bozztv.com:1935/ssh101/estacionmixtv"
       - key: VIDEO_SIZE
         value: "1280x720"
       - key: VIDEO_BITRATE
