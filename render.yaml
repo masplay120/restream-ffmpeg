@@ -2,16 +2,10 @@ services:
   - type: worker
     name: restream-ffmpeg
     env: docker
-    plan: free  # puedes cambiar a starter si Render free no aguanta
+    plan: free   # cámbialo a starter si Render free no aguanta
     autoDeploy: true
     envVars:
       - key: INPUT_URL
         value: "https://live20.bozztv.com/giatvplayout7/giatv-208566/tracks-v1a1/mono.ts.m3u8"
       - key: OUTPUT_URL
         value: "rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"
-      - key: VIDEO_SIZE
-        value: "1280x720"
-      - key: VIDEO_BITRATE
-        value: "2000k"
-      - key: AUDIO_BITRATE
-        value: "64k"
