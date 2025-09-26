@@ -2,7 +2,7 @@
 set -e
 
 # Variables (se pueden sobrescribir en Render -> Environment Variables)
-INPUT_URL=${INPUT_URL:-"https://live20.bozztv.com/giatvplayout7/giatv-208566/tracks-v1a1/mono.ts.m3u8"}
+INPUT_URL=${INPUT_URL:-"https://live20.bozztv.com/giatvplayout/giatvvod/giatv/movies/pvod/208566/bloque_01_con_logos.mp4/playlist.m3u8"}
 OUTPUT_URL=${OUTPUT_URL:-"rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"}
 
 while true; do
