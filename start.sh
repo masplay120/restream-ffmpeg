@@ -2,7 +2,7 @@
 set -e
 
 INPUT_URL=${INPUT_URL:-"https://live20.bozztv.com/giatvplayout7/giatv-208566/playlist.m3u8"}
-OUTPUT_URL=${OUTPUT_URL:-"rtmp://streamlive8.hearthis.at/live/10778826?secret=b45494c4g584"}
+OUTPUT_URL=${OUTPUT_URL:-"rtmp://ssh101.bozztv.com:1935/ssh101/estacionmixtv"}
 
 while true; do
   echo "▶️ [$(date)] Restream en vivo (copiando fluido) desde $INPUT_URL a $OUTPUT_URL..."
